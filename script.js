@@ -87,7 +87,7 @@ collectedType = snap.val().type || 0
 i.innerText = dirID
 t.value = collectedType
 m.value = collectedText
-s.innerText = `${window.location.href}?directive=${toCode(dirID)}`
+s.href = `https://gabriel-galvez.github.io/Directives/?directive=${toCode(dirID)}`
 shown("home", false)
 shown("d", true)
 })

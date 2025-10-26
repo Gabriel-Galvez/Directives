@@ -11,7 +11,9 @@
 <center>
 <span id=home>
 <h1>Directives</h1>
-<button onclick="OpenDirective(prompt('ID'))">Open a Directive</button> <button onclick=CreateDirective()>Create a Directive</button>
+<button onclick="OpenDirective(prompt('ID'))">Open a Directive</button> <button onclick=CreateDirective()>Create a Directive</button><br><br>
+<button onclick=PreviewDirective(o.value)>Preview directive by number code</button> <input type=search id=o oninput=fix() placeholder=#######><br>
+Pasting a URL someone gives you to preview a Directive will auto convert to just number code alone so you should be fine pasting the full URL!
 </span>
 <span id=d>
 Directive ID: <span id=i></span><br>
@@ -31,4 +33,5 @@ Directive ID: <span id=i></span><br>
 </body>
 <script src=script.js></script>
 </html>
+
 

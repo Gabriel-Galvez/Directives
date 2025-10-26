@@ -1,0 +1,13 @@
+html, body {
+size: 100%;
+margin: 0px;
+cursor: default;
+}
+button:not(:active), select:not(:active) {
+cursor: pointer;
+}
+textarea {
+width: 30vw;
+height: 50vh;
+resize: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Directives</title>
+<link rel=stylesheet href=style.css>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+</head>
+<body>
+<center>
+<span id=home>
+<h1>Directives</h1>
+<button onclick="OpenDirective(prompt('ID'))">Open a Directive</button> <button onclick=CreateDirective()>Create a Directive</button>
+</span>
+<span id=d>
+Directive ID: <span id=i></span><br>
+<select id=t onchange=upd()>
+<option value=0>Terms & Service</option>
+<option value=1>Privacy & Policy</option>
+<option value=2>Treaty</option>
+</select><br>
+<textarea id=m oninput=upd()></textarea><br>
+<span id=s></span>
+</span>
+<span id=r>
+<h1 id=n></h1>
+<textarea id=c></textarea>
+</span>
+</center>
+</body>
+<script src=script.js></script>
+</html>

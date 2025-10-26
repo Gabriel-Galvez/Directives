@@ -138,3 +138,6 @@ function copyText(text) {
 navigator.clipboard.writeText(text)
 alert("Copied to clipboard…")
 }
+function fix() {
+o.value = o.value.replace("https://gabriel-galvez.github.io/Directives/?directive=", "")
+}

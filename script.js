@@ -62,8 +62,11 @@ return text
 }
 let currentID = ""
 let collectedPreviewID = ""
-if (location.search.includes("?directive=")) collectedPreviewID = location.search.split("?directive=")[1]
+if (location.search.includes("?directive=")) {
+shown("home", false)
+collectedPreviewID = location.search.split("?directive=")[1]
 PreviewDirective(collectedPreviewID)
+}
 shown("d", false)
 shown("r", false)
 function shown(id, tf) {
@@ -130,4 +133,5 @@ shown("home", false)
 shown("r", true)
 }
 })
+
 }
